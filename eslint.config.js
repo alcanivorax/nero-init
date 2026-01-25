@@ -3,7 +3,11 @@ import parser from "@typescript-eslint/parser";
 
 export default [
   {
+    ignores: ["dist/**", "node_modules/**", "assets/**"],
+  },
+  {
     files: ["**/*.ts"],
+
     languageOptions: {
       parser,
       parserOptions: {
@@ -28,10 +32,8 @@ export default [
       "no-redeclare": "off",
       "@typescript-eslint/no-redeclare": "error",
 
-      "@typescript-eslint/no-floating-promises": "error",
-
       // sanity
-      "no-console": "off",
+      "no-console": "error",
       "prefer-const": "error",
     },
   },
