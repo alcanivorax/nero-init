@@ -1,0 +1,20 @@
+[
+  {
+    "id": "cli",
+    "placeholders": ["projectName"],
+    "commands": {
+      "install": "pnpm install",
+      "dev": "pnpm dev",
+      "build": "pnpm build"
+    }
+  },
+  {
+    "id": "lib",
+    "placeholders": ["projectName"],
+    "commands": {
+      "install": "pnpm install",
+      "dev": "pnpm dev",
+      "build": "pnpm build"
+    }
+  }
+]
