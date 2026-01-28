@@ -23,6 +23,13 @@
     "prepublishOnly": "npm run build",
     "postbuild": "chmod +x dist/index.js"
   },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alcanivorax/{{projectName}.git"
+  },
   "keywords": [
     "cli"
   ],

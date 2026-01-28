@@ -42,10 +42,17 @@ function copyDir(
       continue
     }
 
+    const stat = fs.statSync(srcPath)
+
+    if (stat.isDirectory()) {
+      fs.mkdirSync(destPath, { recursive: true })
+      copyDir(srcPath, destPath, answers, placeholders)
+      continue
+    }
+
+    // now it's GUARANTEED to be a file
     let content = fs.readFileSync(srcPath, 'utf8')
-
     content = applyPlaceholders(content, answers, placeholders)
-
     fs.writeFileSync(destPath, content)
   }
 }

@@ -22,8 +22,15 @@
     "lint:fix": "eslint . --fix",
     "prepublishOnly": "npm run build"
   },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alcanivorax/{{projectName}}.git"
+  },
   "keywords": [],
-  "author": "",
+  "author": "alcanivorax",
   "license": "MIT",
   "packageManager": "pnpm@10.28.0",
   "devDependencies": {
