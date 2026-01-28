@@ -1,14 +1,14 @@
 export type Answers = {
-  projectName: string;
-  type: "cli" | "library";
-};
+  projectName: string
+  type: 'cli' | 'library'
+}
 
 export type TemplateMeta = {
-  id: string;
-  placeholders: string[];
+  id: string
+  placeholders: string[]
   commands: {
-    install: string;
-    dev: string;
-    build: string;
-  };
-};
+    install: string
+    dev: string
+    build: string
+  }
+}

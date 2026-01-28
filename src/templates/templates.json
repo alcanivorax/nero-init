@@ -9,7 +9,7 @@
     }
   },
   {
-    "id": "lib",
+    "id": "library",
     "placeholders": ["projectName"],
     "commands": {
       "install": "pnpm install",
