@@ -18,8 +18,8 @@
     "test": "vitest",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint": "eslint . --config eslint.config.ts",
+    "lint:fix": "eslint . --fix --config eslint.config.ts",
     "prepublishOnly": "npm run build"
   },
   "engines": {
@@ -29,7 +29,9 @@
     "type": "git",
     "url": "git+https://github.com/alcanivorax/{{projectName}}.git"
   },
-  "keywords": [],
+  "keywords": [
+    "library"
+  ],
   "author": "alcanivorax",
   "license": "MIT",
   "packageManager": "pnpm@10.28.0",

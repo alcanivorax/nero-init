@@ -33,7 +33,7 @@ export default [
       '@typescript-eslint/no-redeclare': 'error',
 
       // sanity
-      'no-console': 'error',
+      'no-console': 'off',
       'prefer-const': 'error',
     },
   },

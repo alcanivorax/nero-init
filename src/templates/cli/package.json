@@ -18,8 +18,8 @@
     "test": "vitest",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint": "eslint . --config eslint.config.ts",
+    "lint:fix": "eslint . --fix --config eslint.config.ts",
     "prepublishOnly": "npm run build",
     "postbuild": "chmod +x dist/index.js"
   },
