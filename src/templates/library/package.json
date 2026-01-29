@@ -13,6 +13,7 @@
   },
   "scripts": {
     "dev": "tsx src/index.ts",
+    "clean": "rimraf dist",
     "build": "tsc",
     "typecheck": "tsc --noEmit",
     "test": "vitest",
@@ -41,6 +42,7 @@
     "@typescript-eslint/parser": "^8.53.1",
     "eslint": "^9.39.2",
     "prettier": "^3.8.1",
+    "rimraf": "^6.1.2",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "vitest": "^4.0.18"
