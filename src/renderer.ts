@@ -1,18 +1,26 @@
 import fs from 'node:fs'
 import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import type { Answers, TemplateMeta } from './types.js'
 
-const TEMPLATE_ROOT = new URL('./templates/', import.meta.url)
+const _filename = fileURLToPath(import.meta.url)
+const _dirname = path.dirname(_filename)
+
+const TEMPLATE_ROOT = path.resolve(_dirname, 'templates')
 
 export async function renderTemplate(
   template: TemplateMeta,
   answers: Answers
 ): Promise<void> {
   const targetDir = path.resolve(process.cwd(), answers.projectName)
-  const templateDir = path.resolve(TEMPLATE_ROOT.pathname, template.id)
+  const templateDir = path.resolve(TEMPLATE_ROOT, template.id)
+
+  if (!fs.existsSync(templateDir)) {
+    throw new Error(`Template ${template.id} not found at ${templateDir}`)
+  }
 
   if (fs.existsSync(targetDir)) {
-    throw new Error(`Directory ${answers.projectName} already exists`)
+    throw new Error(`Directory "${answers.projectName}" already exists`)
   }
 
   fs.mkdirSync(targetDir, { recursive: true })
