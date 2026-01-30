@@ -19,8 +19,8 @@
     "test": "vitest",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint": "eslint . --config eslint.config.ts",
-    "lint:fix": "eslint . --fix --config eslint.config.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "prepublishOnly": "npm run build"
   },
   "engines": {

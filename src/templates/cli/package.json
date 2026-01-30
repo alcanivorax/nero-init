@@ -19,8 +19,8 @@
     "test": "vitest",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint": "eslint . --config eslint.config.ts",
-    "lint:fix": "eslint . --fix --config eslint.config.ts",
+    "lint": "eslint . --config",
+    "lint:fix": "eslint . --fix",
     "prepublishOnly": "npm run build",
     "postbuild": "chmod +x dist/index.js"
   },
