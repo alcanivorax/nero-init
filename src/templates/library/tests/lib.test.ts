@@ -3,6 +3,6 @@ import { LIB_NAME } from '../src/index.js'
 
 describe('lib', () => {
   it('exports a library identifier', () => {
-    expect(LIB_NAME).toBe('library')
+    expect(LIB_NAME).toBe('{{projectName}}')
   })
 })
