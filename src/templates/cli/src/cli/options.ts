@@ -4,6 +4,7 @@ import pkg from '../../package.json' with { type: 'json' }
 function printHelp(): void {
   console.log(`
 ${pkg.name} - a cli tool
+
 Usage:
   ${pkg.name} [options]
 
