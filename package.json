@@ -1,6 +1,6 @@
 {
   "name": "nero-init",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Project scaffold for CLI, library and Web templates.",
   "type": "module",
   "main": "./dist/index.js",
