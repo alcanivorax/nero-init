@@ -19,7 +19,7 @@
     "test": "vitest",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint": "eslint . --config",
+    "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepublishOnly": "npm run build",
     "postbuild": "chmod +x dist/index.js"

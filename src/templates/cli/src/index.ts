@@ -3,9 +3,9 @@
 import pkg from '../package.json' with { type: 'json' }
 import { handleCliOptions } from './cli/options.js'
 
-async function run() {
+export async function run() {
   handleCliOptions()
-  console.log(`${pkg.name} is running...`)
+  return `${pkg.name} is running...`
 }
 
-await run()
+console.log(await run())
