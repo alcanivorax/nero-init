@@ -8,8 +8,8 @@ import { postInstall } from './install.js'
 async function run() {
   const answers = await promptUser()
   const template = await selectTemplate(answers)
-  const render = await renderTemplate(template, answers)
-  const install = await postInstall(template, answers)
+  await renderTemplate(template, answers)
+  await postInstall(template, answers)
 }
 
 await run()

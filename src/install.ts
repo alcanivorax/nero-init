@@ -91,7 +91,7 @@ async function initGit(dir: string) {
         chalk.hex(theme.muted)(`    ${symbols.corner} No git binary found`)
       )
     }
-  } catch (error) {
+  } catch {
     spinner.stopAndPersist({
       symbol: chalk.hex('#EF4444')(`${symbols.error}`),
       text: chalk.hex('#EF4444')('Failed to initialize git'),

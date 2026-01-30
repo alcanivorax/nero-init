@@ -42,9 +42,9 @@ No arguments, no flags — just answer the prompts.
 ├── .prettierrc              # Prettier configuration
 ├── .prettierignore          # Prettier ignore rules
 │
-├── eslint.config.ts         # ESLint configuration
+├── eslint.config.js         # ESLint configuration
 ├── tsconfig.json            # TypeScript configuration
-├── vitest.config.ts         # Test configuration
+├── vitest.config.ys         # Test configuration
 │
 ├── package.json             # Package metadata & scripts
 ├── README.md                # Project documentation
@@ -68,7 +68,7 @@ No arguments, no flags — just answer the prompts.
 ├── .prettierrc               # Prettier configuration
 ├── .prettierignore           # Prettier ignore rules
 │
-├── eslint.config.ts          # ESLint (flat, TypeScript config)
+├── eslint.config.js          # ESLint (flat, TypeScript config)
 ├── tsconfig.json             # TypeScript configuration
 ├── vitest.config.ts          # Test configuration
 │
