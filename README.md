@@ -1,4 +1,22 @@
-# nero-init
+<br />
+
+<h1 align="center">nero-init</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/npm/v/nero-init?color=6366f1" alt="npm version" />
+  <img src="https://img.shields.io/npm/dt/nero-init?color=0f172a" alt="npm downloads" />
+  <img src="https://img.shields.io/github/license/alcanivorax/nero-init?color=22c55e" alt="license" />
+</p>
+
+<br />
+
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/alcanivorax/nero-init/main/public/nero-init-preview.gif"
+    alt="nero-init demo"
+    width="800"
+  />
+</p>
 
 <br >
 
